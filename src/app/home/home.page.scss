@@ -29,11 +29,28 @@
 .img {
   display: block;
   height: 40vh;
-  width: 60%;
+  width: 70%;
   padding: 2em;
   border-radius: 3.125rem;
   
 }
+
+.img-perfil {
+  // display: block;
+  height: 25vh;
+  width: 65%;
+  padding: 2em;
+  border-radius: 12.5em;
+}
+
+.img-post {
+  display: flex;
+  height: 40vh;
+  width: 70%;
+  padding: 2em;
+  border-radius: 3.125rem;
+}
+
 .container {
   height: 50vh;
   width: 100%;

@@ -41,7 +41,37 @@
     </ion-col>
   </ion-row>
   <hr>
-
+  <ion-row>
+    <ion-col size="12">
+      <h3>Postagens de Amigos</h3>
+      <ng-container class="container" *ngFor="let post of this.postagens">
+        <ion-row>
+          <!-- Foto de Perfil -->
+          <ion-col size="2">
+            <ng-container *ngIf="post.perfil.foto == null">
+              <img src="https://cdn-icons-png.flaticon.com/512/634/634012.png?w=826&t=st=1685035553~exp=1685036153~hmac=521f79cbf856346a5c8c5712d037437c60f3273dbdd074b962e9be8c52a19995" alt="" class="img-perfil">
+            </ng-container>
+            <ng-container *ngIf="post.perfil.foto != null">
+              <img src="{{ post.perfil.foto }}" alt="" class="img-perfil">
+            </ng-container>
+          </ion-col>
+          <!-- Postagem -->
+          <ion-col size="10">
+            <ion-item>
+              <ion-label><p>{{ post.perfil.nome }}</p></ion-label>
+              <ion-label><p>{{ post.perfil.mencao_perfil }}</p></ion-label>
+            </ion-item>
+            <ion-item>
+              <ion-label>{{ post.postagem.mensagem }}</ion-label>
+              <ng-container *ngIf="post.postagem.foto != null">
+                <img src="{{ post.postagem.foto }}" alt="" class="img-post">
+              </ng-container>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ng-container>
+    </ion-col>
+  </ion-row>
   
 
 </ion-content>

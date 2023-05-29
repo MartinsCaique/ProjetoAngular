@@ -29,12 +29,44 @@
 .img {
   display: block;
   height: 40vh;
-  width: 60%;
+  width: 70%;
   padding: 2em;
-  border-radius: 3.125rem;
+  --border-radius: 14px !important;
   
 }
+
+.img-perfil {
+  // display: block;
+  height: 75vh;
+  width: 75%;
+  padding: 2em;
+  border-radius: 100%;
+  align-items:baseline;
+}
+
+.post{
+  display: flex;
+  flex-direction: column;
+  .img-post {
+    height: 60vh;
+    width: 40%;
+    border-radius: 3.125rem;
+    align-self: flex-start;
+  }
+}
+
+.name {
+  padding-left: 2em;
+  color: #8c8c8c;
+}
+
 .container {
   height: 50vh;
   width: 100%;
 }
+// @media screen and (max-width: 600px){
+//   .img, .img-perfil, .img-post {
+//     max-height: 20vh;
+//     width: 40%;
+//   }
+// }

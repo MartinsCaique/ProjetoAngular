@@ -2,7 +2,7 @@
   
   <ion-row class="container">
     <ion-col size="4">
-    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img">
+    <ion-img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="img"></ion-img>
     </ion-col>
 
     <ion-col size="8">
@@ -41,7 +41,40 @@
     </ion-col>
   </ion-row>
   <hr>
-
+  <ion-row>
+    <ion-col size="12">
+      <h3>Postagens de Amigos</h3>
+      <ng-container class="container" *ngFor="let post of this.postagens">
+        <ion-row>
+          <!-- Foto de Perfil -->
+          <ion-col size="2">
+            <ng-container *ngIf="post.perfil.foto === null">
+              <ion-img src="https://cdn-icons-png.flaticon.com/512/634/634012.png?w=826&t=st=1685035553~exp=1685036153~hmac=521f79cbf856346a5c8c5712d037437c60f3273dbdd074b962e9be8c52a19995" alt="" class="img-perfil"></ion-img>
+            </ng-container>
+            <ng-container *ngIf="post.perfil.foto !== null">
+              <ion-img src="{{ post.perfil.foto }}" alt="" class="img-perfil"></ion-img>
+            </ng-container>
+          </ion-col>
+          <!-- Postagem -->
+          <ion-col size="10">
+            <ion-item>
+              <label class="name"><p>{{ post.perfil.nome }}</p></label>
+              <label class="name"><p>{{ post.perfil.mencao_perfil }}</p></label>
+            </ion-item>
+            <ion-item class="post">
+              <ion-row>               
+                  <ion-label>{{ post.postagem.mensagem }}</ion-label>
+                  <br><br>                
+                  <ng-container *ngIf="post.postagem.foto !== null">
+                    <ion-img src="{{ post.postagem.foto }}" class="img-post"></ion-img>
+                  </ng-container>
+                </ion-row>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ng-container>
+    </ion-col>
+  </ion-row>
   
 
 </ion-content>

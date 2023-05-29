@@ -159,7 +159,7 @@ export class HomePage {
       },
       postagem: {
         mensagem: 'Não confie em tudo que lê na internet',
-        foto: 'https://images.pexels.com/photos/47453/pexels-photo-47453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        foto: 'https://images.pexels.com/photos/3856050/pexels-photo-3856050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
       }
     },
     {
@@ -181,7 +181,7 @@ export class HomePage {
       },
       postagem: {
         mensagem: 'Por que não existem elevadores no Pólo Norte?',
-        foto: 'https://images.pexels.com/photos/6212265/pexels-photo-6212265.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+        foto: 'https://images.pexels.com/photos/3861787/pexels-photo-3861787.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
       }
     },
     {
@@ -225,7 +225,7 @@ export class HomePage {
         },
         postagem: {
           mensagem: 'Como manter uma rotina de estudos eficiente?',
-          foto: 'https://images.pexels.com/photos/5792692/pexels-photo-5792692.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
+          foto: 'https://images.pexels.com/photos/2646033/pexels-photo-2646033.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'
         }
       }    
   ]

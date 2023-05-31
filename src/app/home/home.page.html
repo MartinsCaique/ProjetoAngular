@@ -7,10 +7,10 @@
 
     <ion-col size="8">
       <ion-label>
-        <h1>Carlitos</h1>
+        <h1>{{ perfil.nome }}</h1>
       </ion-label>
       <ion-label>
-        <h3>Professor</h3>
+        <h3>{{ perfil.profissao }}</h3>
       </ion-label>
       <ion-row>
         <ion-button class="ion-padding" color="dark" shape="round">Seguir</ion-button>
@@ -21,15 +21,15 @@
 
   <ion-row class="container">
     <ion-col size="4">
-      <ion-label>41.8k</ion-label>
+      <ion-label>{{ metricas_sociais.curtidas }}</ion-label>
       <h6>Curtidas</h6>
     </ion-col>
     <ion-col size="4">
-      <ion-label>853</ion-label>
+      <ion-label>{{ metricas_sociais.seguidores }}</ion-label>
       <h6>Seguidores</h6>
     </ion-col>
     <ion-col size="4">
-      <ion-label>250</ion-label>
+      <ion-label>{{ metricas_sociais.amigos }}</ion-label>
       <h6>Amigos</h6>
     </ion-col>
   </ion-row>

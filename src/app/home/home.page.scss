@@ -25,3 +25,48 @@
 #container a {
   text-decoration: none;
 }
+// * {
+//   border: red 1px solid;
+// }
+.telaExibicao {
+  height: 35vh;
+}
+.line-cor {
+  height: 10%;
+}
+.line-exib {
+  height: 75%;
+}
+.line-hidle {
+  height: 15%;
+}
+.telaManipulacao {
+  height: calc(65vh - 4px);
+}
+.telaManipulacao-line {
+  height: 20%;
+  background: #F4F4F4;
+}
+.lineInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  .lineInfo-label {
+    height: 100%;
+    width: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.lineInfo-num {
+  --background: #4E5054;
+  --background-activated: #88f4be;
+}
+.lineInfo-num:hover {
+  --background: #979090;
+}
+.lineInfo-simb {
+  --background: #5C5EA4;
+}
